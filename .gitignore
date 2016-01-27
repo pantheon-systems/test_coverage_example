@@ -2,3 +2,5 @@
 .DS_Store?
 *.pyc
 __init__.py
+__pycache__
+.cache

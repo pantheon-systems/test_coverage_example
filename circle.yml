@@ -11,6 +11,4 @@ test:
   override:
     - autopep8 -v -i -r -a ./fibonacci_bdd/features/*.py ./fibonacci_bdd/features/steps/*.py ./fibonacci_old/*.py ./fibonacci_old/tests/*.py
     - behave fibonacci_bdd/features/fibonacci.feature
-    - cd ..
-    - cd fibonacci_old
-    - py.test tests/test_fibonacci.py
+    - py.test fibonacci_old/tests/test_fibonacci.py

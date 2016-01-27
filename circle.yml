@@ -1,0 +1,15 @@
+machine:
+  python:
+    version: 2.7.10
+
+dependencies:
+  pre:
+    - easy_install pip
+    - pip install -r requirements.txt
+
+test:
+  override:
+    - autopep8 -v -i -r -a ./features/steps/*.py *.py ./tests/*.py
+    - behave features/*.feature
+    - py.test ./tests/*.py --cov=fibonacci.py
+    - coveralls

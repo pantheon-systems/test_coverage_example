@@ -1,6 +1,6 @@
 import sys
 sys.path.insert(
-    0, r'/Users/raymondchung/Desktop/Vagrant/Git/fibonacci/fibonacci_old')
+    0, r'/Users/raymondchung/Desktop/Vagrant/Git/fibonacci')
 
 import os
 import unittest

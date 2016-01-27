@@ -1,11 +1,8 @@
-#import sys
-#sys.path.insert(0, r'/Users/raymondchung/Desktop/Vagrant/Git/fibonacci')
-
 import unittest
 import fibonacci
 
 
-class fabFileTestCase(unittest.TestCase):
+class fibonacciTestCase(unittest.TestCase):
 
     def setUp(self):
         pass

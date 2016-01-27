@@ -2,7 +2,7 @@ import unittest
 import fibonacci
 
 
-class fabFileTestCase(unittest.TestCase):
+class fibonacciTestCase(unittest.TestCase):
 
     def setUp(self):
         pass

@@ -1,23 +1,35 @@
-[![Circle CI](https://circleci.com/gh/RazzYoshi/fibonacci.svg?style=shield&circle-token=:ac345a662a65b94983c698051aff8ea2bf43a2c9)](https://circleci.com/gh/RazzYoshi/fibonacci)
+[![Circle CI](https://circleci.com/gh/pantheon-systems/test_coverage_example.svg?style=shield&circle-token=:fccbb1a2b24d20deedd2bf8178ba8aacab19e2af)](https://circleci.com/gh/pantheon-systems/test_coverage_example)
+[![Coverage Status](https://coveralls.io/repos/github/pantheon-systems/test_coverage_example/badge.svg?branch=master)](https://coveralls.io/github/pantheon-systems/test_coverage_example?branch=master)
 
 fibonacci
 ===============
 
-Two implementations of the same fibonacci sequence generator, one using BDD and another using the classic development workflow.
+An example of linting, behavior driven development, unit testing, test coverage reporting, and continuous integration using an implementation of a fibonacci sequence generator.
 
 ## Requirements
+
 'pip install -r requirements.txt'
 
-## How to Run
+## Testing packages
 
-**BDD**
+autopep8==1.2.1
 
-`cd fibonacci_bdd`
+behave==1.2.5
 
-`behave`
+pytest==2.8.5
 
-**Classic**
+pytest-cov==2.2.0
 
-`cd fibonacci_old`
+coveralls==1.1
 
-`python tests/test_fibonacci.py`
+## Testing services
+
+[Circle CI](https://circleci.com)
+
+[Coveralls](https://coveralls.io)
+
+## How to Run Tests
+
+`behave features/*.feature`
+
+`py.test ./tests/*.py`

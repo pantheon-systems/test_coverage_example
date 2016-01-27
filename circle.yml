@@ -9,6 +9,7 @@ dependencies:
 
 test:
   override:
-    - autopep8 -v -i -r -a ./fibonacci_bdd/features/*.py ./fibonacci_bdd/features/steps/*.py ./fibonacci_old/*.py ./fibonacci_old/tests/*.py
-    - behave fibonacci_bdd/features/fibonacci.feature
-    - py.test fibonacci_old/tests/test_fibonacci.py
+    - autopep8 -v -i -r -a ./features/steps/*.py *.py ./tests/*.py
+    - behave features/*.feature
+    - py.test ./tests/*.py --cov=fibonacci
+    - coveralls

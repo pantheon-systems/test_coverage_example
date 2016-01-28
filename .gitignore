@@ -8,3 +8,7 @@ build/
 dist/
 .coverage
 MANIFEST
+ORKON_HOME/
+.cache/
+.vagrant/
+ORKON_HOME

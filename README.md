@@ -8,7 +8,7 @@ An example of linting, behavior driven development, unit testing, test coverage 
 
 ## Requirements
 
-'pip install -r requirements.txt'
+'make prep'
 
 ## Testing packages
 
@@ -30,6 +30,18 @@ coveralls==1.1
 
 ## How to Run Tests
 
-`behave features/*.feature`
+It's highly suggested that you run on a virtual machine like vagrant. If you have vagrant installed you can start with
 
-`py.test ./tests/*.py`
+`make vagrant`
+
+If your vagrant box is a fedora
+
+`make setupfedora; source /usr/bin/virtualenvwrapper.sh; mkvirtualenv testcovex; make prep; make test`
+
+If you are on a mac
+
+`make setupmac; source /usr/bin/virtualenvwrapper.sh; mkvirtualenv testcovex; make prep; make test`
+
+To run tests by themselves
+
+`make test`

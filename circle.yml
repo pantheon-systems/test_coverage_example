@@ -11,5 +11,5 @@ test:
   override:
     - autopep8 -v -i -r -a ./features/steps/*.py *.py ./tests/*.py
     - behave features/*.feature
-    - py.test --cov=fibonacci test_*.py 
+    - py.test --cov=fibonacci ./tests/*.py 
     - coveralls

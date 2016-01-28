@@ -3,3 +3,8 @@
 *.pyc
 __pycache__
 .cache
+build/
+.vagrant
+dist/
+.coverage
+MANIFEST

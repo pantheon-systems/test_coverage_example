@@ -1,4 +1,4 @@
-import fibonacci
+from fibonacci import fibonacci
 from behave import given, when, then
 
 # States
@@ -7,11 +7,13 @@ from behave import given, when, then
 @given(u'a count of "{count}"')
 def step_store_integer_count(context, count):
     context.count = int(count)
+    context.f = fibonacci.Fibonacci()
 
 
 @given(u'a non-integer count of "pantheon"')
 def step_store_literal_count(context):
     context.count = 'pantheon'
+    context.f = fibonacci.Fibonacci()
 
 # Actions
 
@@ -19,7 +21,7 @@ def step_store_literal_count(context):
 @when(u'I call the fibonacci function')
 def step_call_fibonacci(context):
     try:
-        context.result = fibonacci.fib(context.count)
+        context.result = context.f.fib(context.count)
     except Exception as err:
         context.error = err
 

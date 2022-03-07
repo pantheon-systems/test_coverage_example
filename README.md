@@ -1,5 +1,7 @@
 [![Circle CI](https://circleci.com/gh/pantheon-systems/test_coverage_example.svg?style=shield&circle-token=:fccbb1a2b24d20deedd2bf8178ba8aacab19e2af)](https://circleci.com/gh/pantheon-systems/test_coverage_example)
 [![Coverage Status](https://coveralls.io/repos/github/pantheon-systems/test_coverage_example/badge.svg?branch=master)](https://coveralls.io/github/pantheon-systems/test_coverage_example?branch=master)
+[![Unofficial](https://img.shields.io/badge/Pantheon-Unofficial-yellow?logo=pantheon&color=FFDC28)](https://pantheon.io/docs/oss-support-levels#unofficial)
+
 
 fibonacci
 ===============
